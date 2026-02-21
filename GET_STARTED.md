@@ -14,11 +14,20 @@ The system **does not run without a license**. When you try to run it without on
 
 There you will receive your license and the download link for the ready-to-run package.
 
-### 2. Download and install
+### 2. Install (one command)
 
-- Download the package from the link provided when you complete the license process.
-- Extract it to a folder of your choice.
-- Set your **license** in the `KETER_LICENSE_KEY` environment variable or in the file `local/.keter_license` (one line with the token).
+**Windows (PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/rovidev95/AsianOdds88-Trading-System/main/install.ps1 | iex
+```
+
+**Linux / macOS:**
+```bash
+curl -sSL https://raw.githubusercontent.com/rovidev95/AsianOdds88-Trading-System/main/install.sh | bash
+```
+
+This downloads and extracts the latest package—**no source code**, no cloning. Alternatively, use the link from the license process or the [Releases](https://github.com/rovidev95/AsianOdds88-Trading-System/releases) page (`AsianOdds88-Windows.zip` or `AsianOdds88-Linux.tar.gz`).
+- Set your **license** in `KETER_LICENSE_KEY` or in the file `local/.keter_license` (one line with the token).
 
 ### 3. Configure and run
 

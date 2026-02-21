@@ -16,24 +16,40 @@ Keywords: automated betting, odds trading, live odds, AsianOdds88 license, betti
 
 ---
 
-## What you need to run it
+## Install with one command (no code in this repo)
 
-- **License:** Required to start. If you don't have one, the system will show the link when you run it.
-- **Environment:** Python 3.10+, Redis (port 6379), AsianOdds88 account with API (Login, GetFeeds, PlaceBet, GetAccountSummary).
-- **Optional EC2:** Ubuntu instance, ports 22 (SSH) and 8080 (dashboard); single deploy script.
+The system is distributed as **binaries only**; this repository contains **no source code**—just the installer and docs. One command installs the latest version from GitHub Releases.
+
+**Windows (PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/rovidev95/AsianOdds88-Trading-System/main/install.ps1 | iex
+```
+
+**Linux / macOS:**
+```bash
+curl -sSL https://raw.githubusercontent.com/rovidev95/AsianOdds88-Trading-System/main/install.sh | bash
+```
+
+This downloads and extracts the package for your OS. Then: set your **license** (see [Get started](GET_STARTED.md)), copy `.env.example` → `.env`, ensure **Redis** is running, and run `start.bat` (Windows) or `./start.sh` (Linux).
 
 ---
 
-## Get started: download and run
+## What you need to run it
 
-1. **Get your license** — The system will not start without it. The link is shown when you run it, or go to: **[AsianOdds88 Trading System – Get license and download](https://rovidev.com/asianodds88/)**.
-2. **Download the package** — From the link you receive after completing the license process (instructions on the same page).
-3. **Configure** — Copy the example config files (e.g. `.env.example` → `.env`). Set your license in `KETER_LICENSE_KEY` or in `local/.keter_license`, and your AsianOdds88 credentials as described in the package documentation.
-4. **Run** — Local: use the start script from the package; server: deploy and run as per the included instructions. Open the dashboard at `http://<your-IP>:8080`.
+- **License:** Required to start. Get it at **[AsianOdds88 – Get license](https://rovidev.com/asianodds88/)**. Without it, the system shows the link when you run it.
+- **Environment:** Redis (port 6379), AsianOdds88 account with API (Login, GetFeeds, PlaceBet, GetAccountSummary).
+- **Optional:** Ubuntu server, ports 22 (SSH) and 8080 (dashboard).
 
-If the license expires or is invalid, the system will show a clear message at startup and the link to renew or get a new one.
+---
 
-**Ready to automate?** → **[Get license and download →](https://rovidev.com/asianodds88/)**
+## Get started
+
+1. **Get your license** — **[Get license →](https://rovidev.com/asianodds88/)** (required to run).
+2. **Install** — Run the one command above (Windows or Linux). Or download from [Releases](https://github.com/rovidev95/AsianOdds88-Trading-System/releases) and extract manually.
+3. **Configure** — In the installed `AsianOdds88` folder: set license (`KETER_LICENSE_KEY` or `local/.keter_license`), copy `.env.example` → `.env`, and set Redis/AsianOdds88 as needed.
+4. **Run** — `start.bat` (Windows) or `./start.sh` (Linux). Dashboard: `http://<your-IP>:8080`.
+
+**Ready?** → **[Get license and download →](https://rovidev.com/asianodds88/)**
 
 ---
 
