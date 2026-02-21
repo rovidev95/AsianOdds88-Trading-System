@@ -1,0 +1,23 @@
+# Add to .gitignore
+*.tfstate
+*.tfstate.backup
+.terraform/
+terraform.tfvars
+deployment_outputs.json
+*.log
+__pycache__/
+*.pyc
+.env
+.DS_Store
+local/remote.config
+*.pem
+*.swp
+*.swo
+node_modules/
+.env.local
+logs/*.log
+*.license
+*.key
+.keter_license
+local/.keter_license
+config/license_private.pem
