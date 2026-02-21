@@ -21,3 +21,17 @@ logs/*.log
 .keter_license
 local/.keter_license
 config/license_private.pem
+build/dist/
+build/build_cache/
+build/validate_license/
+build/asianodds_ingest/
+build/movement_tracker/
+build/signal_density_engine/
+build/market_validator/
+build/math_edge_evaluator/
+build/execution_lock_manager/
+build/execution_engine/
+build/risk_guard/
+build/order_router/
+build/dashboard_server/
+build/telemetry_daemon/

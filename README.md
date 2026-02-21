@@ -16,9 +16,15 @@ Keywords: automated betting, odds trading, live odds, AsianOdds88 license, betti
 
 ---
 
-## Install with one command (no code in this repo)
+## No source code, no private data
 
-The system is distributed as **binaries only**; this repository contains **no source code**—just the installer and docs. One command installs the latest version from GitHub Releases.
+This repository is **public and safe**: it contains **no source code** (no `.py` files, no `src/` or `scripts/` with code) and **no private data**. Only documentation, the install scripts above, and an example `.env`. The actual system is distributed as **binaries** via [Releases](https://github.com/rovidev95/AsianOdds88-Trading-System/releases). When you install, you get the **full system including the dashboard** (port 8080)—everything runs from the downloaded package.
+
+---
+
+## Install with one command
+
+One command installs the latest version from GitHub Releases (Windows or Linux).
 
 **Windows (PowerShell):**
 ```powershell
