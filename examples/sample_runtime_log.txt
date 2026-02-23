@@ -1,0 +1,19 @@
+2026-02-22T10:00:01Z INFO  source=host1 service=validate_license message=License validation passed
+2026-02-22T10:00:02Z INFO  source=host1 service=asianodds_ingest message=LOGIN_ATTEMPT_START
+2026-02-22T10:00:03Z INFO  source=host1 service=asianodds_ingest message=SUCCESS AUTH_COMPLETE token=eyJhbGc...
+2026-02-22T10:00:05Z INFO  source=host1 service=asianodds_ingest message=ACCOUNT_STATS_PERSISTED_TO_REDIS
+2026-02-22T10:00:06Z INFO  source=host1 service=movement_tracker message=Movement tracker started
+2026-02-22T10:00:06Z INFO  source=host1 service=signal_density_engine message=KETER Signal Density Active
+2026-02-22T10:00:07Z INFO  source=host1 service=market_validator message=VALIDATOR Active
+2026-02-22T10:00:08Z INFO  source=host1 service=math_edge_evaluator message=Math Edge Evaluator Active
+2026-02-22T10:00:09Z INFO  source=host1 service=execution_lock_manager message=Execution Lock Manager Active
+2026-02-22T10:00:10Z INFO  source=host1 service=execution_engine message=Execution Engine Active
+2026-02-22T10:00:11Z INFO  source=host1 service=risk_guard message=Risk Guard Active
+2026-02-22T10:00:12Z INFO  source=host1 service=order_router message=Order router started
+2026-02-22T10:00:13Z INFO  source=host1 service=dashboard_server message=Dashboard listening on 0.0.0.0:8080
+2026-02-22T10:01:00Z INFO  source=host1 service=asianodds_ingest message=SESSION_RESTORED_FROM_REDIS age=57
+2026-02-22T10:02:15Z INFO  source=host1 service=market_validator message=VALIDATED event_uid=12345 selection_id=1
+2026-02-22T10:02:16Z INFO  source=host1 service=order_router message=PLACEMENT_ATTEMPT event_uid=12345 selection_id=1 stake=0.30 mode=DRY
+2026-02-22T10:02:16Z INFO  source=host1 service=order_router message=PLACEMENT_SKIPPED_DRY_MODE
+2026-02-22T10:05:00Z INFO  source=host1 service=risk_guard message=risk:daily_pnl updated
+2026-02-22T10:10:00Z INFO  source=host1 service=asianodds_ingest message=ACCOUNT_STATS_PERSISTED_TO_REDIS

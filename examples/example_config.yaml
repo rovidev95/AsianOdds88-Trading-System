@@ -1,0 +1,53 @@
+# Example configuration for AsianOdds88 Trading System (reference only).
+# The actual system uses environment variables / .env; this file illustrates
+# the kind of options a production deployment might expose.
+
+runtime:
+  execution_mode: DRY          # DRY | LIVE
+  redis_host: localhost
+  redis_port: 6379
+
+ingest:
+  poll_interval_sec: 5
+  session_refresh_before_sec: 300
+  max_retries: 3
+  request_timeout_sec: 15
+
+execution:
+  fixed_stake: 0.30
+  min_stake_usd: 10.0
+  max_stake_usd: 500.0
+  placement_timeout_sec: 12
+  max_retries: 2
+  backoff_base_sec: 0.5
+  backoff_cap_sec: 8.0
+
+risk:
+  daily_loss_limit_pct: 0.10
+  max_exposure_pct: 0.40
+  max_consecutive_losses: 5
+  cooldown_event_sec: 60
+  kill_switch_key: trading_enabled
+
+edge:
+  min_ev_pct: 5.0
+  sharp_whitelist: [PIN, ISN, SBO]
+  min_sharp_sources: 2
+  confirmation_window_sec: 0
+  max_consensus_spread_pct: 5.0
+
+blacklists:
+  leagues: ""           # comma-separated league ids to skip
+  market_types: ""      # comma-separated market types to skip
+
+logging:
+  level: INFO
+  structured: true
+  audit_placements: true
+
+dashboard:
+  host: 0.0.0.0
+  port: 8080
+
+# Credentials are never stored in config; use environment variables
+# AO_USER, AO_PASS, KETER_LICENSE_KEY (or local/.keter_license)
